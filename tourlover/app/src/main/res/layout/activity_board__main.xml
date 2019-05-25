@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Board_Main">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    <!--게시판 아래로 하나씩 나오게 하는 코드-->
+
+
+    <!--플로팅액트->리사이클러 뷰 위에버튼 띄우는 함수 그냥 버튼은 들어갈수 가 없다-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/main_write_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_edit"
+        app:backgroundTint="#009688"/>  <!--xml파일 주석은 이렇게  마진->버튼을 화면 아래로 부터 10만큼 뛰우기-->
+    <!--android:src="@drawable/ic_edit$app:backgroundTint="#009688"는 버튼 이미지 수정코드-->
+
+</RelativeLayout>
